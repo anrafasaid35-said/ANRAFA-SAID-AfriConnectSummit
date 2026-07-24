@@ -776,8 +776,9 @@ th, td {
 /*  THÉMATIQUES */
 #thematiques {
     background-color: #18db97; 
-    padding: 60px 0;
+    padding: 60px 4%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #thematiques h2 {
@@ -787,10 +788,13 @@ th, td {
 
 .grid-thematiques {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px 5%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 35px;
+    padding: 20px 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -820,13 +824,14 @@ th, td {
 }
 
 .card {
-    min-width: 300px;
-    max-width: 350px;
-    height: 250px;
+    flex: 1;
+    min-width: 0;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .card-ia { 
